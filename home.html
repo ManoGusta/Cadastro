@@ -1,0 +1,96 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    body {
+        background: url(./img/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        margin-bottom: 40px;
+        box-shadow: 10px 5px 10px black;
+        width: 100%;
+        align-items: center;
+        color: white;
+    }
+
+    .navigation a {
+        color: black;
+    }
+
+    #logout {
+        font-size: 40px;
+        cursor: pointer;
+        transform: rotate(0);
+        transition: 0.5s;
+        color: white;
+    }
+
+    #logout:hover {
+        transform: rotate(180deg);
+    }
+
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .box ul {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .box ul li a {
+        color: white;
+        flex-direction: column;
+        background: black;
+        padding: 30px;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+
+    .box ul li a:hover{
+        background-color: rgb(42, 41, 41);
+        border: solid 3px white;
+        letter-spacing: 3px;
+    }
+</style>
+
+<body>
+    <header class="navigation">
+        <h2>Dev.Gusta</h2>
+        <a href="#">
+            <i class='bx bx-log-out-circle' id="logout"></i>
+        </a>
+    </header>
+    <h1>Olá seja bem Vindo! :)</h1>
+    <div class="box">
+        <ul>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="index.php">cadastro</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
